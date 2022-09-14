@@ -1,0 +1,40 @@
+{
+	"Products":[
+		  {
+			"id": "1",
+			"product": "XBox",
+			"category": "xbox",
+			"image": "https://imgur.com/uKQqsuA.png",
+			"price": 36.49
+		  },
+		  {
+			"id": 2,
+			"product": "PS5",
+			"category": "ps5",
+			"image": "https://imgur.com/3Y1DLYC.png",
+			"price": 36.49
+		  },
+		  {
+			"id": 3,
+			"product": "Switch",
+			"category": "switch",
+			"image": "https://imgur.com/Dm212HS.png",
+			"price": 36.49
+		  },
+		  {
+			"id": 4,
+			"product": "PC",
+			"category": "pc",
+			"image": "https://imgur.com/qb6IW1f.png",
+			"price": 36.49
+		  },
+		  {
+			"id": 5,
+			"product": "Accessories",
+			"category": "accessories",
+			"image": "https://imgur.com/HsUfuRU.png",
+			"price": 36.49
+		  }
+  
+ ] 
+}

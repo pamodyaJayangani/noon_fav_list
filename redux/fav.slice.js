@@ -5,11 +5,13 @@ const favSlice = createSlice({
   initialState: [],
   reducers: {
     addToFav: (state, action) => {
-     /* const itemExists = state.find((item) => item.id === action.payload.id);
-      if (itemExists) {
-        itemExists.quantity++;
-      } else {*/
-        state.push({ ...action.payload, quantity: 1 });
+      const itemExists = state.find((item) => item.payload === action.payload);
+      if (!itemExists) {
+        //itemExists.quantity++;
+		state.push({...action});
+      } /*else {*/
+        //state.push({ ...action.payload, quantity: 1 });
+		//state.push({...action});
      // }
     },
     /*incrementQuantity: (state, action) => {
@@ -26,7 +28,7 @@ const favSlice = createSlice({
       }
     },*/
     removeFromFav: (state, action) => {
-      const index = state.findIndex((item) => item.id === action.payload);
+      const index = state.findIndex((item) => item.payload === action.payload);
       state.splice(index, 1);
     },
   },
@@ -35,8 +37,6 @@ const favSlice = createSlice({
 export const cartReducer = favSlice.reducer;
 
 export const {
-  addToFav,
-  incrementQuantity,
-  decrementQuantity,
+  addToFav,  
   removeFromFav,
 } = favSlice.actions;
