@@ -1,20 +1,21 @@
 
 import Link from 'next/link';
 import styles from '../styles/Navbar.module.css';
+import noon from '../public/noon-logo.png'
+import Image from 'next/image';
 
 const Navbar = () => {
   return (
+  
     <nav className={styles.navbar}>
-      <h6 className={styles.logo}>noon</h6>
+    <Image src={noon} height={100} width={100} />    
       <ul className={styles.links}>
         <li className={styles.navlink}>
           <Link href="/">Home</Link>
         </li>
+        
         <li className={styles.navlink}>
-          <Link href="/shop">Favourite</Link>
-        </li>
-        <li className={styles.navlink}>
-          <Link href="/cart">Cart</Link>
+          <Link href="/cart">Liked</Link>
         </li>
       </ul>
     </nav>
@@ -22,3 +23,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+

@@ -3,7 +3,7 @@ import Image from 'next/image';
 import styles from '../styles/CategoryCard.module.css';
 import { useDispatch } from 'react-redux';
 import { addToFav } from '../redux/fav.slice';
-import { getProducts } from '../pages/api/index';
+
 
 const CategoryCard = ({ name,image }) => {
 	const dispatch = useDispatch();
@@ -19,9 +19,8 @@ const CategoryCard = ({ name,image }) => {
     </div>
   );
 };
+
+
+
 export default CategoryCard;
 
-export async function getStaticProps() {
-  const products = await getProducts();
-  return { props: { products } };
-}
