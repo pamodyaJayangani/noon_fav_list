@@ -1,5 +1,5 @@
 ## Project Structure
-
+```
 | -- components
     | -- CategoryCard.js
     | -- footer.js
@@ -24,6 +24,7 @@
 | -- app.js
 | -- package.json
 
+```
 ## Getting Started
 
 First, run the development server:
