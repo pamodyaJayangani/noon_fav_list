@@ -1,9 +1,10 @@
 {
-  "name": "shopping-cart",
+  "name": "favorite-list",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node app",
+	"start:dev": "NODE_ENV='development' node app.js",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -11,6 +12,8 @@
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.5",
     "caniuse-lite": "^1.0.30001396",
+    "express": "^4.18.1",
+    "http-proxy-middleware": "^2.0.6",
     "next": "^12.3.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",

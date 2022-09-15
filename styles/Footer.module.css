@@ -36,6 +36,7 @@
   cursor: pointer;
   display: flex;
   justify-content: space-between;
+  width: 50%;
 }
 
 .navbar .btn:focus {
